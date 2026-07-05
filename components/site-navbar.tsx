@@ -80,9 +80,13 @@ export function SiteNavbar() {
                 {link.label}
               </a>
             ))}
-            <a href="#contact" onClick={() = className={buttonVariants({className: "mt-2"})}> setOpen(false)}>
-                Book Now
-              </a>
+            <a
+              href="#contact"
+              onClick={() => setOpen(false)}
+              className={buttonVariants({ className: "mt-2" })}
+            >
+              Book Now
+            </a>
           </div>
         </div>
       )}
