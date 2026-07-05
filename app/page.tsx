@@ -6,7 +6,7 @@ import { SitePricing } from "@/components/site-pricing"
 import { SiteTestimonials } from "@/components/site-testimonials"
 import { SiteContact } from "@/components/site-contact"
 import { SiteFooter } from "@/components/site-footer"
-import { Button } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
 
 export default function Page() {
   return (
@@ -23,9 +23,7 @@ export default function Page() {
       <SiteFooter />
 
       {/* Always-visible Book Now button on mobile */}
-      <Button asChild size="lg" className="fixed bottom-5 right-5 z-40 shadow-lg sm:hidden">
-        <a href="#contact">Book Now</a>
-      </Button>
+      <a href="#contact" className={buttonVariants({ size: "lg", className: "fixed bottom-5 right-5 z-40 shadow-lg sm:hidden" })}>Book Now</a>
     </div>
   )
 }
