@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { CheckCircle2, ShieldCheck, Star } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
 
 const highlights = ["Vetted & trained staff", "100% satisfaction", "Eco-friendly products"]
 
@@ -22,12 +22,8 @@ export function SiteHero() {
             on what matters most.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Button asChild size="lg">
-              <a href="#contact">Get a Free Quote</a>
-            </Button>
-            <Button asChild size="lg" variant="outline">
-              <a href="#services">Explore Services</a>
-            </Button>
+            <a href="#contact" className={buttonVariants({size: "lg"})}>Get a Free Quote</a>
+            <a href="#services" className={buttonVariants({size: "lg", variant: "outline"})}>Explore Services</a>
           </div>
           <ul className="flex flex-wrap gap-x-6 gap-y-2 pt-2">
             {highlights.map((item) => (

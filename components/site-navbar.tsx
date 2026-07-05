@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { Menu, Sparkles, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
@@ -54,9 +54,7 @@ export function SiteNavbar() {
         </div>
 
         <div className="flex items-center gap-2">
-          <Button asChild className="hidden sm:inline-flex">
-            <a href="#contact">Book Now</a>
-          </Button>
+          <a href="#contact" className={buttonVariants({className: "hidden sm:inline-flex"})}>Book Now</a>
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
@@ -82,11 +80,9 @@ export function SiteNavbar() {
                 {link.label}
               </a>
             ))}
-            <Button asChild className="mt-2">
-              <a href="#contact" onClick={() => setOpen(false)}>
+            <a href="#contact" onClick={() = className={buttonVariants({className: "mt-2"})}> setOpen(false)}>
                 Book Now
               </a>
-            </Button>
           </div>
         </div>
       )}

@@ -1,5 +1,5 @@
 import { Check } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
 const plans = [
@@ -80,13 +80,15 @@ export function SitePricing() {
                   </li>
                 ))}
               </ul>
-              <Button
-                asChild
-                className="mt-8 w-full"
-                variant={plan.popular ? "default" : "outline"}
+              <a
+                href="#contact"
+                className={buttonVariants({
+                  className: "mt-8 w-full",
+                  variant: plan.popular ? "default" : "outline",
+                })}
               >
-                <a href="#contact">Choose {plan.name}</a>
-              </Button>
+                Choose {plan.name}
+              </a>
             </div>
           ))}
         </div>
