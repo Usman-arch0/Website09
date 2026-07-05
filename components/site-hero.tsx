@@ -38,7 +38,7 @@ export function SiteHero() {
         <div className="relative">
           <div className="overflow-hidden rounded-2xl border border-border shadow-xl">
             <Image
-              src="/hero-cleaning.png"
+              src="/Website09/hero-cleaning.png"
               alt="Professional cleaner tidying a bright modern living room"
               width={720}
               height={620}

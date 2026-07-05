@@ -30,7 +30,7 @@ export function SiteAbout() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
         <div className="order-2 overflow-hidden rounded-2xl border border-border shadow-lg lg:order-1">
           <Image
-            src="/about-team.png"
+            src="/Website09/about-team.png"
             alt="Friendly SparkleClean team in blue uniforms ready to clean"
             width={640}
             height={520}
